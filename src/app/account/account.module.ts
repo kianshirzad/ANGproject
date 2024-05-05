@@ -35,9 +35,9 @@ import { RouterModule } from '@angular/router';
           { path: 'dashboard', component: DashboardComponent },
           { path: 'changepassword', component: ChangePasswordComponent },
           { path: 'orders', component: OrdersComponent },
-          { path: 'favs', component: FavoritsComponent },
-          { path: 'address', component: AddressessComponent },
-          { path: 'payment', component: PaymentsComponent },
+          { path: 'favorites', component: FavoritsComponent },
+          { path: 'addressess', component: AddressessComponent },
+          { path: 'payments', component: PaymentsComponent },
           { path: 'profile', component: ProfileComponent },
           { path: 'tickets', component: TicketsComponent },
         ]
