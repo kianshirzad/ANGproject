@@ -1,0 +1,1286 @@
+$Header-color : #434343;
+$Gray-color:#EDEDED;
+$Gold-color:#C3A270;
+$orange-color:#FF6C00;
+
+
+*{
+    font-family: Vazirmatn;
+}
+#HeaderinmenuJanebi{
+    background-color: #525252a8;
+}
+// Header
+.Header{
+    background-color: $Header-color;
+    width: 100%;
+    height: 60px;
+    div{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    img{
+        float: left;
+        width: 50px;
+    }
+
+    ul{
+        list-style-type: none;
+        color: white;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        text-align:center;
+        display:table-cell;
+        width: 150px;
+        margin-top: 9px;
+    }
+
+}
+
+.icons{
+    float: right;
+    height: 100%;
+
+    img{
+        width: 20px;
+        float: right;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        width: 80px;
+        height: 100%;
+        float: right;
+    }
+    p{
+        color: white;
+        margin-top: 9px;
+    }
+}
+#hamburgerIcon{
+    float: right;
+    width: 30px;
+}
+
+.grayHeader{
+    width: 100%;
+    height: 70px;
+    background-color: $Gray-color;
+    img{
+        float: left;
+        width: 50px;
+        margin-top:9px;
+    }
+
+    ul{
+        list-style-type: none;
+        color: black;
+        float: right;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        text-align:center;
+        display:table-cell;
+        width: 150px;
+    }
+}
+
+// Blog1
+.banner{
+    width: 100%;
+    border-radius: 18px;
+    height: 250px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url('assets/images/baner.jpg');
+}
+
+.breakLine{
+    width: 99%;
+    margin: auto;
+    height: 2px;
+    background-color: $Gold-color;
+    font-family: vazirmatn;
+    margin-top: 25px;
+    // position: absolute;
+    div{
+        background-color: white;
+        width: 130px;
+        font-size: 15px;
+        text-align: center;
+        margin: auto;
+        margin-top: -10px;
+    }
+}
+
+
+// footer
+.footernav{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    margin-top: 20px;
+    background-color: $Gray-color;
+    text-align: center;
+    img{
+        width: 150px;
+    }
+    .footernavItems{
+        width: 80%;
+        margin: auto;
+    }
+    p{
+        float: right;
+        margin-top: 12px;
+    }
+    a{
+        float: left;
+        text-decoration: none;
+        color: black;
+        margin-top: 12px;
+    }
+}
+footer{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin: auto;
+   
+    ul{
+        float: right;
+        margin-top: 80px;
+        list-style-type: none;
+        text-align: right;
+        margin-right: 40px;
+    }
+    li{
+        margin-top: 10px;
+    }
+   
+    h3{
+        font-size: larger;
+        font-weight: bold;
+    }
+} 
+.mobFSocialIcons{
+    width: 35px;
+}
+#DTEnemad{
+        float: left;
+        margin-top: 90px;
+    }
+    #MOBEnemad{
+        width: 80px;
+    }
+.mobFooter{
+    text-align: center;
+    margin-top: 100px;
+}
+#DTFooterIMGs{
+    float: left;
+    height: 100%;
+    margin-left: 80px;
+    h3{
+        margin-top: 100px;
+    }
+    img{
+        width: 50px;
+        margin-top: -10px;
+        margin-left: 15px;
+    }
+}
+
+// blog3 styles
+.selectedItem{
+    color: $orange-color;
+}
+.navigation{
+    width: 82%;
+    margin: auto;
+    color: $Header-color;
+    text-align: right;
+    position: absolute;
+    p{
+        margin-top: 130px;
+    }
+}
+.blogTitle{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    div{
+        p{
+            float: left;
+            margin-top: -0.01px;
+            margin-left: 10px;
+            color:$Header-color;
+        }
+        img{
+            width: 25px;
+            float: left;
+        }
+        h2{
+            float: right;
+            font-size: 15px;
+        }
+        
+    }
+    img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    h3{
+        color: $Gold-color;
+    }
+    p{
+        color: $Gold-color;
+    }
+}
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    h3{
+      color: $Gold-color;  
+    }
+    .Ad{
+        width: 100%;
+        height: 200px;
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 10px;
+        img{
+            width: 20%;
+            float: right;
+            height: 100%;
+        }
+        h1{
+            font-size: 25px;
+            color: $Header-color;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        div{
+            float: right;
+            text-align: right;
+            width: 100%;
+        }
+        p{
+            float: right;
+            margin-top: -100px;
+            margin-right: 250px;
+        }
+        input{
+            background-color: $orange-color;
+            color: white;
+            border-style: none;
+            float: left;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-top: -50px;
+            margin-left: 20px;
+        }
+    }
+    h5{
+        margin-top: 10px;
+    }
+}
+@mixin contactDivs{
+    width: 100%;
+    margin: auto;
+
+}
+.Contactbanner{
+    width: 100%;
+    height: 180px;
+    background-image: url('assets/images/contact\ slicto\ banner.jpg');
+}
+.ContactTemp{
+    text-align: center;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    @include contactDivs();
+    div{
+        width: 90%;
+        margin: auto;
+    }
+    h1{
+        color: $Gold-color;
+    }
+    @mixin inputs{
+        input{
+        width: 100%;
+        height: 40px;
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 10px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+    .rightInputs{
+        width: 45%;
+        float: right;
+        text-align: right;
+        @include inputs();
+    }
+    .leftInputs{
+        width: 49%;
+        float: left;
+        text-align: right;
+        @include inputs();
+    }
+    textarea{
+        width: 100%;
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: 10px;
+        resize: none;
+    }
+
+    button{
+        width: 90%;
+        background-color: $orange-color;
+        font-size: 20px;
+        color: white;
+        height: 60px;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    padding-bottom: 30px;
+
+}
+.contactP{
+    text-align: center;
+    color: $Gold-color;
+    
+}
+.ContactTemplate{
+    width: 60%;
+    margin: auto; 
+    padding-bottom: 120px;;
+}
+.contactDetails{
+    text-align: right;
+    @include contactDivs();
+
+    h5{
+        color: $orange-color;    
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+    p{
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: -20px;
+    }
+}
+
+@mixin EmailandPhone{
+    width: 49%;
+    height: 100px;
+    text-align: center;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 10px;
+    p{
+        margin-top: -20px;
+    }
+    h1{
+        color: $Gold-color
+    }
+}
+
+.contactEmail{
+    @include EmailandPhone();
+    float: left;
+}
+.contactNumber{
+    @include EmailandPhone();
+    float: right;
+}
+.upload{
+    width: 40%;
+    margin: auto;
+    border: $orange-color;
+    border-style: dashed;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    div{
+        width: 95%;
+        height: 90%;
+        border-radius: 10px;
+        background-color: #e254545d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        p{
+            margin-top: 10px;
+        }
+    }  
+ 
+}
+
+.steps{
+    width: 80%;
+    height: 5px;
+    background-color: $Gray-color;
+    margin: auto;
+    padding-left: 50px;
+    @mixin steps{
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+    @mixin circules{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    #right{
+        @include steps();
+        background-color: $orange-color;
+        div{
+            @include circules();
+            background-color: $orange-color;
+            float: right;
+            margin-top: -7px;
+            margin-right: 50px
+        }
+    }
+
+    #left{
+        @include steps();
+        div{
+            @include circules();
+            background-color: $Gray-color;
+            float: left;
+            margin-top: -7px
+        }
+        #center{
+            background-color: $orange-color;
+            float: right;
+        }
+    }
+}
+.AdressPageTemp{
+    color: $Header-color;
+    width: 80%;
+    text-align: right;
+    margin: auto;
+    margin-top: 50px;
+    h1{
+        font-size: 20px;
+    }
+    .break{
+        width: 100%;
+        margin: auto;
+        background-color: #525252;
+        height: 1px;
+    }
+    input{
+        accent-color: $orange-color;
+    }
+    a{
+        margin-right: 20px;
+        text-decoration: none;
+    }
+    #newAddress{
+        float: left;
+    }
+    div{
+        width: 100%;
+        text-align: center;
+    }
+    button{
+        width: 50%;
+        height: 50px;
+        background-color: white;
+        border: $orange-color;
+        border-style: solid;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: blue;
+        font-family: vazirmatn;
+        cursor: pointer;
+    }
+    .postDetail{
+        font-size: 12px;
+       
+    } 
+    h3{
+            float: left;
+            color: $Gold-color;
+        }
+        #total{
+            margin-top: -40px;
+        }
+        #accept{
+            background-color: $orange-color;
+            width: 40%;
+            height: 50px;
+            color: white;
+            border-radius: 10px;
+            border-style: none;
+            font-family: vazirmatn;
+            font-size: 15px;
+        }
+}
+
+// dashboard
+#temp{
+    width: 90%;
+    margin: auto;
+}
+.dashboardNavbar{
+    width: 100%;
+    text-align: center;
+    float: right;
+    #dashboardNavbarcontent{
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: #1d1d1d;
+            padding-top: 15px;
+            padding-bottom: 15px;
+    
+            h1{
+                color:$orange-color;
+                font-size: 20px;
+            }
+            h3{
+                color:$Gray-color;
+                font-size: 14px;
+            }
+            p{
+                color:white;
+                font-size: 18px;
+            }
+            h2{
+                color:yellow;
+                font-size: 15px;
+            }
+        }
+    #dashboardNavbarBody{
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: $Gray-color;
+        border-style: solid;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: right;
+        img{
+            float: right;
+            width: 30px;
+            padding-right: 40px;
+            margin-top: -6px;
+        }
+        p{
+            font-size: 15px;
+            margin-top: -1px;
+            font-weight: bold;
+            color: $Header-color;
+            margin-right: 100px;
+        }
+    }
+}
+.dascboardContent{
+    width:100%;
+    margin-top: -12px;
+    text-align: right;
+    float: left;
+    border: $Gray-color;
+    border-style: solid;
+    background-color: white;
+    border-radius: 15px;
+    div{
+        width: 100%;
+        border-top-style: outset;
+        border-bottom-color: $Gray-color;
+        padding-top: 15px;
+        h5{
+            float: right;
+            color: $Header-color;
+            margin-right: 40px;
+            margin-top:35px;
+        }
+        h6{
+            float: right;
+            color: $orange-color;
+            margin-right: 10px;
+            font-size: 15px;
+            
+        }
+       h4{
+            float: right;
+            color: $Header-color;
+            margin-right: 30px;
+            margin-top:35px;
+        }
+        img{
+            float: left;
+            width: 25px; 
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        p{
+            float: right;
+            margin-right: 30px;
+            margin-top: -9px;
+
+        }
+        h3{
+            float: left;
+            margin-top: -22px;
+            color: $Gold-color;
+            margin-left: 20px;
+        }
+        h1{
+            float: right;
+            font-size: 20px;
+            margin-top: -10px;
+        }
+    }
+ 
+}
+
+.dashboardsteps{
+    width: 180px;
+    height: 80px;
+    margin-top: 100px;
+    float: right; 
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 15px;
+    margin-right: 30px;
+    text-align: center;
+
+    h3{
+        font-size: 15px;
+    }
+    p{
+        margin-top: -10px;
+    }
+}
+#selectedOrderImage{
+    float: right;
+    width: 180px;
+    height: 100%;  
+  
+}
+#selectedStep{
+    color: $orange-color;
+    border: $orange-color;
+    border-style: solid;
+  
+}
+#color{
+    width: 20px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #525252;
+    float: right;
+    margin-right: 50px;
+    margin-top: -10px;
+}
+.dashboardAddress{
+    width: 100%;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 15px;
+    margin-top: 100px;
+    h1{text-align: center;
+        font-size: 22px;
+    }
+    h2{
+        margin-top: -50px;
+        margin-left: 20px;
+        color: blue;
+        font-size: 20px;
+    }
+    div{
+        text-align: right;
+        padding-bottom: 50px;
+    }
+    h3{
+       font-size: 15px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    #text{
+        float: right;
+        margin-right: 20px;
+    }
+    #icon{
+        float: right;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+    img{
+        width: 30px;
+    }
+    #links{
+        margin-right: 800px;
+        margin-top: -100px;
+    }
+    a{
+        float: left;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+}
+.chatcontent{
+    width: 100%;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 15px;
+    float: left;
+    text-align: right;
+    h3{
+        color:$orange-color;
+        font-size: 14px;
+    }
+    padding-left: 10px;
+    padding-right: 10px;
+    #send{
+        width: 100%;
+        text-align: center;
+    }
+    textarea{
+        width: 80%;
+        resize: none;
+        border: $Gray-color;
+        border-style: solid;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    #send{
+        margin: auto;
+         div{
+        width: 100%;
+        height: 50px;
+        background-color: #95343480;
+        border: $orange-color;
+        border-style: dashed;
+        margin-right: 20px;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    button{
+        width: 50%;
+        margin-top: 20px;
+        border-style: none;
+        color: white;
+        background-color: $orange-color;
+        border-radius: 10px;
+        font-size: 15px;
+        height: 50px;
+        font-family: vazirmatn;
+        cursor: pointer;
+    }
+    }
+   
+}
+.pm1{
+    width: 50%;
+    background-color: $Gray-color;
+    height: 85px;
+    text-align: right;
+    float: right;
+    border-radius: 10px;
+    p{
+        margin-right: 10px;
+    }
+    h1{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+.pm2{
+    width: 50%;
+    height: 85px;
+    background-color: white;
+    border: $orange-color;
+    border-style: solid;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+    p{
+        margin-right: 10px
+    }
+    h1{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+.menuj{
+    width: 100%;
+    position: absolute;
+    background-color: #434343;
+    height: 200px;
+    margin-left: -8px;
+    margin-top: 53px;
+    display: none;
+}
+.menujItems{
+    width: 600px;    
+    text-align: right;
+    margin-left: 300px;
+
+    ul{
+        float: left;
+        color: white;
+        list-style-type: none;
+    }
+
+}
+#moremenu{
+    width: 20px;
+    height: 20px;
+    background-color: #434343;
+    margin-left: 520px;
+    margin-top: -9px;
+    transform: rotate(45deg);
+}
+
+.filterNav{
+    width: 100%;
+    height: 70px;
+    background-color: $Gray-color;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: 53px;
+    text-align: right;
+    p{
+        color: $Gold-color;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+}
+.filterbody{
+    background-color: #d1d1d1;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -4px;
+    p{
+        float: right;
+        margin-top: 30px;
+        margin-right: 70px;
+    }
+    #checkboxBody{
+        width: 50px;
+
+        background-color: $Gold-color;
+        height: 30px;
+        margin-top: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        float: right;
+        #checkBox{
+            width: 27px;
+            margin-left: 1px;
+            height: 27px;
+            background-color: white;
+            border: $Gold-color;
+            border-style: solid;
+            border-radius: 50%;
+        }
+    }
+
+
+    #priceRange{
+        width: 200px;
+        margin-top: 48px;
+        margin-left: 200px;
+        height: 1px;
+        background-color: $Header-color;        
+        #low{
+            width: 10px;
+            height: 10px;
+            background-color: #1d1d1d;
+            border-radius: 50%;
+            float: left;
+            margin-top: -4px;
+            margin-left: 10px;
+        }
+        #high{
+            width: 10px;
+            height: 10px;
+            background-color: #1d1d1d;
+            border-radius: 50%;
+            float: right;
+            margin-top: -4px;
+            margin-right: 30px;
+        }
+    }
+    #lowestFilterdPrice{
+        color: $Gold-color;
+        margin-top: -9px;
+        position: absolute;
+        margin-left: 140px;
+        font-size: 14px;
+    }
+    #highestFilterdPrice{
+        color: $Gold-color;
+        color: $Gold-color;
+        margin-top: -9px;
+        position: absolute;
+        margin-left: 410px;
+        font-size: 14px;
+    }
+}
+
+#filterByBrand{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: 90px;
+    p{
+        float: right;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+}
+#filterByBrandDiv{
+    width: 20px;
+    height: 20px;
+    background-color: #ebebeb;
+    margin-left: 1000px;
+    margin-top: -9px;
+    transform: rotate(45deg);
+}
+
+#DropstepsTitle{
+    margin: auto;
+    width: 80%;
+    p{
+        float: right;
+    }
+    }
+
+#hambF{
+    display: none;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+   
+   
+    .catBanners{
+        width: 100%;
+        height: 200px;
+        background-color: #1d1d1d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/images/blog1.jpg);
+        background-size: auto;
+    }
+    .productImage{
+        height: 200px;
+        width: 100%;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/images/blog1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+    }
+    .productTitle{
+        text-align: center;
+        font-size: large;
+        color: $Header-color;
+    }
+    .card-text{
+        text-align: center;
+        font-size: large;
+        color: $Header-color;
+    }
+    .productPrice{
+        text-align: center;
+        font-size: medium;
+        color: $Gold-color;
+    }
+
+    .productImagesTitle{
+        width: 100%;
+        height: 400PX;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/images/blog1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .otherProdoctImages{
+        width: 70px;
+        height: 70px;
+        margin: auto;
+    }
+    .PTitle{
+        text-align: right;
+        color: $Header-color;
+    }
+    .PDetails{
+        text-align: right;
+        color: $Header-color;
+
+    }
+    .Psize{
+        width: 100%;
+        height: 50px;
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: $Header-color;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .MContainer{
+        color: $Header-color;
+        text-align: right;
+    }
+
+    .Pcolors{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 5px;
+        background-color: red;
+    }
+    .PCount{
+        justify-content: right;
+        input{
+            text-align: center;
+        }
+    }
+
+    .PAddtocart{
+        width: 100%;
+        background-color: $orange-color;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        border-style: none;
+        height: 40px;
+    }
+
+    .FBlog{
+        width: 100%;
+        height: 250px;
+        margin-top: 40px;
+    }
+    .postDes{
+        text-align: right;
+        h1{
+            color: $Gold-color;
+            font-size: 25px;
+            padding-right: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            padding-right: 20px;
+        }
+        h2{
+            font-size: 14px;
+            color: $Header-color;
+            padding-right: 20px;
+        }
+    }
+
+    .postViews{
+        color: $orange-color;
+    }
+    .view{
+        text-align: right;
+        img{
+            width: 25px;
+            padding-right: 5px;
+        }
+        color: $orange-color;
+    }
+    .PostTitle{
+        color: $Gold-color;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .PostDes{
+        color: $Gold-color;
+        text-align: right;
+    }
+    .ConSmBoxes{
+        text-align: center;
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 10px;
+        h1{
+            font-size: 20px;
+            padding-top: 10px;
+            color: $Gold-color;
+        }
+    }
+    .sendBTN{
+        color: white;
+        background-color: $orange-color;
+        height: 40px;
+    }
+    .ed{
+        color: blue;
+    }
+    .add{
+        color: blue;
+    }
+   
+
+    .cardimg{
+        width: 100%;
+        height: 200px;
+        background-image: url('assets/images/blog1.jpg');
+    }
+    .b1banner{
+        background-image: url('assets/images/blog1.jpg');
+    }
+    .pbanner{
+        width: 100%;
+        height: 250px;
+        background-image: url('assets/images/blog1.jpg');
+
+    }
+    .blog3TitleImg{
+        width: 100%;
+        height: 250px;
+        background-image: url('assets/images/blog1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+.mobFooter{display: none;}
+.DTFooter{margin-top: 20px;}
+#like{width: 30px;margin-top: -4px;}
+.likeIcon{
+    text-align: left;
+}
+.ADs{
+    text-align: center;
+    h5{
+        font-size: 25px;
+    }
+}
+.image{
+    border-radius: 10px;
+}
+    @media only screen and (max-width:1000px) {
+        header{
+               li{
+                font-size: medium;
+               }
+               .icons{
+                display: none;
+               }
+               #hambF{
+                display: flex;
+               }
+        }  
+        .DTFooter{
+            display: none;
+        }   
+        .mobFooter{
+            display: block;
+        }
+    }
+
+
+    .dashboardIndex{
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    #downSymbol{
+        width: 40px;
+    }
+    #FAQTitle{
+        font-size: 25px;
+    }
+
+    
+    @media only screen and (max-width:777px) {
+        header{
+               #headerLinks{
+                display: none;
+               }
+               .icons{
+                display: none;
+               }
+               #hambF{
+                display: flex;
+               }
+        }     
+        .grayHeader{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:1123px) {
+       footer{width: 90%;}
+    }
+
+    @media only screen and (max-width : 680px){
+        .dashboardsteps{
+            display: none;
+        }
+        .dascboardContent{
+            margin-top: 10px;
+            font-size: smaller;
+        }
+        .footernav{
+            img{
+                display: none;
+            }
+        }
+    }
+
