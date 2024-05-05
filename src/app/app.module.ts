@@ -22,6 +22,9 @@ import { BrowserModule } from '@angular/platform-browser';
     RouterModule.forRoot(
       [
         { path: '', component: HomeComponent },
+        { path: 'account', loadChildren:()=> import('./account/account.module').then(c=>c.AccountModule)},
+
+        
         { path: 'category', component: CategoryComponent },
         { path: 'listing', component: ProductaListingComponent },
         { path: 'product/:id/:title', component: ProductComponent },
