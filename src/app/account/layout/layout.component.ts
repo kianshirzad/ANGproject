@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { DataService } from '../../data.service';
 
 @Component({
   selector : 'LayoutDashboard',
@@ -8,5 +9,5 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
   encapsulation: ViewEncapsulation.None
 })
 export class LayoutComponent {
-
+constructor(public data:DataService){}
 }
