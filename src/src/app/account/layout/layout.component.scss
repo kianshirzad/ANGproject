@@ -1,0 +1,585 @@
+.vazirmatn-VazirFont {
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+  }
+  
+
+  * {
+    font-family: "Vazirmatn";
+}
+
+
+$Header-color : #434343;
+$Gray-color: #EDEDED;
+$Gold-color: #C3A270;
+$orange-color: #FF6C00;
+
+.opensans {
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.steps {
+    width: 80%;
+    height: 5px;
+    background-color: $Gray-color;
+    margin: auto;
+    padding-left: 50px;
+
+    @mixin steps {
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+
+    @mixin circules {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    #right {
+        @include steps();
+        background-color: $orange-color;
+
+        div {
+            @include circules();
+            background-color: $orange-color;
+            float: right;
+            margin-top: -7px;
+            margin-right: 50px
+        }
+    }
+
+    #left {
+        @include steps();
+
+        div {
+            @include circules();
+            background-color: $Gray-color;
+            float: left;
+            margin-top: -7px
+        }
+
+        #center {
+            background-color: $orange-color;
+            float: right;
+        }
+    }
+}
+
+.AdressPageTemp {
+    color: $Header-color;
+    width: 80%;
+    text-align: right;
+    margin: auto;
+    margin-top: 50px;
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .break {
+        width: 100%;
+        margin: auto;
+        background-color: #525252;
+        height: 1px;
+    }
+
+    input {
+        accent-color: $orange-color;
+    }
+
+    a {
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    #newAddress {
+        float: left;
+    }
+
+    div {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        width: 50%;
+        height: 50px;
+        background-color: white;
+        border: $orange-color;
+        border-style: solid;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: blue;
+        font-family: vazirmatn;
+        cursor: pointer;
+    }
+
+    .postDetail {
+        font-size: 12px;
+
+    }
+
+    h3 {
+        float: left;
+        color: $Gold-color;
+    }
+
+    #total {
+        margin-top: -40px;
+    }
+
+    #accept {
+        background-color: $orange-color;
+        width: 40%;
+        height: 50px;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        font-family: vazirmatn;
+        font-size: 15px;
+    }
+}
+
+
+.dashboardNavbar {
+    width: 100%;
+    text-align: center;
+    float: right;
+
+    #dashboardNavbarcontent {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: #1d1d1d;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        h1 {
+            color: $orange-color;
+            font-size: 20px;
+        }
+
+        h3 {
+            color: $Gray-color;
+            font-size: 14px;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: yellow;
+            font-size: 15px;
+        }
+    }
+
+    #dashboardNavbarBody {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: $Gray-color;
+        border-style: solid;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: right;
+
+        img {
+            float: right;
+            width: 30px;
+            padding-right: 40px;
+            margin-top: -6px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-top: -1px;
+            font-weight: bold;
+            color: $Header-color;
+            margin-right: 100px;
+        }
+    }
+}
+
+.dascboardContent {
+    width: 100%;
+    margin-top: -12px;
+    text-align: right;
+    float: left;
+    border: $Gray-color;
+    border-style: solid;
+    background-color: white;
+    border-radius: 15px;
+
+    div {
+        width: 100%;
+        border-top-style: outset;
+        border-bottom-color: $Gray-color;
+        padding-top: 15px;
+
+        h5 {
+            float: right;
+            color: $Header-color;
+            margin-right: 40px;
+            margin-top: 35px;
+        }
+
+        h6 {
+            float: right;
+            color: $orange-color;
+            margin-right: 10px;
+            font-size: 15px;
+
+        }
+
+        h4 {
+            float: right;
+            color: $Header-color;
+            margin-right: 30px;
+            margin-top: 35px;
+        }
+
+        img {
+            float: left;
+            width: 25px;
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+
+        p {
+            float: right;
+            margin-right: 30px;
+            margin-top: -9px;
+
+        }
+
+        h3 {
+            float: left;
+            margin-top: -22px;
+            color: $Gold-color;
+            margin-left: 20px;
+        }
+
+        h1 {
+            float: right;
+            font-size: 20px;
+            margin-top: -10px;
+        }
+    }
+
+}
+
+.dashboardsteps {
+    width: 180px;
+    height: 80px;
+    margin-top: 100px;
+    float: right;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 15px;
+    margin-right: 30px;
+    text-align: center;
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        margin-top: -10px;
+    }
+}
+
+.dashboardIndex {
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 2;
+}
+
+.add {
+    color: blue;
+}
+.ed {
+    color: blue;
+}
+
+.chatcontent {
+    width: 100%;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 15px;
+    float: left;
+    text-align: right;
+
+    h3 {
+        color: $orange-color;
+        font-size: 14px;
+    }
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    #send {
+        width: 100%;
+        text-align: center;
+    }
+
+    textarea {
+        width: 80%;
+        resize: none;
+        border: $Gray-color;
+        border-style: solid;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    #send {
+        margin: auto;
+
+        div {
+            width: 100%;
+            height: 50px;
+            background-color: #95343480;
+            border: $orange-color;
+            border-style: dashed;
+            margin-right: 20px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        button {
+            width: 50%;
+            margin-top: 20px;
+            border-style: none;
+            color: white;
+            background-color: $orange-color;
+            border-radius: 10px;
+            font-size: 15px;
+            height: 50px;
+            font-family: vazirmatn;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.pm1 {
+    width: 50%;
+    background-color: $Gray-color;
+    height: 85px;
+    text-align: right;
+    float: right;
+    border-radius: 10px;
+
+    p {
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+.pm2 {
+    width: 50%;
+    height: 85px;
+    background-color: white;
+    border: $orange-color;
+    border-style: solid;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+
+    p {
+        margin-right: 10px
+    }
+
+    h1 {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+#changePassDashboard{
+    width: 50%;
+    text-align: right;
+    margin: auto;
+
+    input{
+        width: 100%;
+        height: 50px;
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: -7px;
+    }
+    p{
+        margin-top: 30px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        border-style: none;
+        color: white;
+        background-color: $orange-color;
+        border-radius: 10px;
+        font-size: 15px;
+        height: 50px;
+        font-family: vazirmatn;
+        cursor: pointer;
+    }
+}
+.DashboardOrdersSteps{
+    width: 100%;
+    height: 150px;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 10px;
+    padding-bottom: -7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+}
+#selectedStep{
+    border-color: $orange-color;
+    color: $orange-color;
+}
+#ordersDashboardIndex{
+    margin-top: -15px;
+    background-color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.totalPrice{
+    width: 100%;
+    height: 100px;
+    background-color: $orange-color;
+    border-radius: 22px;
+}
+
+#totalTitle{
+    width: 50%;
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    padding-right: 15px;
+}
+#totalnumber{
+    width: 50%;
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+}
+.listDTitle{
+    text-align: right;
+    color: $Header-color;
+    margin-top: 15px;
+}
+#listTitle{
+    text-align: center;
+    font-weight: bold;
+}
+.numberCollor{
+    color: $orange-color;
+}
+.DashboardHomepageNavigation{
+    width: 100%;
+    height: 100px;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.Dash1NavTitle{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+}
+.Dash1Navtotal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: $orange-color;
+}
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: $Gray-color;
+    margin-top: 10px;
+}
+#D1Log{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 174, 0);
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#D1message{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width:990px) {
+    #changePassDashboard{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:539px) {
+    .listDTitle{
+        font-size: small;
+    }
+}
