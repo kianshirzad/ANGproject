@@ -1,0 +1,472 @@
+@font-face {
+    font-family: yek;
+    src: url(Yekan.ttf);
+  }
+  
+body{
+    background-color: #252525;
+}
+*{
+    font-family: yek;
+}
+header{
+    width: 90%;
+    height: 80px;
+    position: fixed;
+    left: 50%;
+    transition: all 0.5s;
+    transform: translate(-50%, 0);
+    background: rgba(58, 58, 58, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.2px);
+    -webkit-backdrop-filter: blur(16.2px);
+    margin-top: 8px;
+    z-index: 1;
+}
+#Logo{
+    width: 20%;
+    height: 80px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#HeaderLinks{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+#HeaderLoginButton{
+    width: 20%;
+    height: 80px;
+    float: left;
+}
+#LogoIMG{
+    width: 100px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+.HeaderButtons{
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float: left;
+}
+#logInButton{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-style: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.15s;
+}#logInButton:hover{
+    box-shadow: -1px 1px 123px -2px rgba(255,255,255,1);
+    -webkit-box-shadow: -1px 1px 123px -2px rgba(255,255,255,1);
+    -moz-box-shadow: -1px 1px 123px -2px rgba(255,255,255,1);
+}
+#signInButton{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+    border: white;
+    border-style: solid;
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+}#signInButton:hover{
+    background-color: white;
+    color: black;
+    box-shadow: -1px 1px 123px -2px rgba(255,255,255,1);
+    -webkit-box-shadow: -1px 1px 123px -2px rgba(255,255,255,1);
+    -moz-box-shadow: -1px 1px 123px -2px rgba(255,255,255,1);
+}
+.navItems{
+    width: 25%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    transition: all 0.2s;
+    cursor: pointer;
+}.navItems:hover{
+    text-shadow: 1px -1px 20px rgba(255,255,255,1);
+}
+#hamburgerIconBox{
+    width: 20%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+  label{
+   display:flex;
+    flex-direction:column;
+    width:30px;
+    cursor:pointer;
+  }
+  
+  label span{
+    background: #fff;
+    border-radius:10px;
+    height:4px;
+    margin: 3px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  
+  }
+  
+  span:nth-of-type(1){
+    width:75%;
+  }
+  
+  span:nth-of-type(2){
+    width:100%;
+  }
+  
+  
+  span:nth-of-type(3){
+    width:75%;
+   
+  }
+  
+  
+  input[type="checkbox"]{
+    display:none;
+  }
+  
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(12px,3px)
+  }
+  
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    
+    transform-origin:top;
+    transform:rotatez(-45deg)
+  }
+  
+  
+  input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(3.5px,-16px) rotatez(45deg);
+  
+  }
+
+  #hamburgerIconBox{
+    display: none;
+  }
+  #cartIcon{
+    display: none;
+    width: 25px;
+  }
+  #userIcon{
+    display: none;
+    width: 25px;
+  }
+
+  #MobNavItems{
+    width: 100%;
+    display: none;
+    position: fixed;
+    margin-top: 100px;
+  }
+  .navItemsinMobile{
+    width: 100%;
+    height: 100px;
+    font-size: large;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #About{
+    width: 100%;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(imgs/AboutBanner.png);
+    background-size: cover;
+  }
+  #spesIMG{
+    width: 100%;
+    z-index: -1;
+    animation-name:scale;
+    animation-duration:1s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-out;
+  }
+
+  footer{
+    background-image: url(imgs/FooterBG.png);
+    width: 100%;
+    height: 700px;
+  }
+  @keyframes scale{
+    0%{
+      transform:translate(0,0);
+    }
+    100%{
+      transform:translate(0,-30px);
+    }
+  }
+  .ordertemp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .count{
+    width: 100%;
+    height: 200px;
+    background: rgba(58, 58, 58, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.2px);
+    -webkit-backdrop-filter: blur(16.2px);
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    color: white;
+    margin-top: 15px;
+  }
+  #logLink{
+    width: 100%;
+  }
+  .MobCounting{
+    display: none;
+  }
+
+
+@media only screen and (max-width:930px) {
+    #HeaderLinks{
+        width: 60%;
+    }
+    #logInButton{
+        font-size: 15px;
+    }
+    #signInButton{
+        font-size: 15px;
+    }
+    #LogoIMG{
+        width: 90px;
+    }
+}
+@media only screen and (max-width : 760px) {
+    #HeaderLinks{
+        display: none;
+    }
+
+    #hamburgerIconBox{
+        display: flex;
+        float: left;
+        
+      }
+      #Logo{
+       width: 60%;
+       float: right;
+      }
+
+      #HeaderLoginButton{
+        width: 20%;
+       float: right;
+       height: 100%;
+      }
+      #signInButton{display: none;}
+      #logInButton{display: none;}
+      #userIcon{
+        display: block;
+        cursor: pointer;
+      }
+      .HeaderButtons{
+        width: 20%;
+      }
+}
+@media only screen and (max-width:768px) {
+  #About{
+    height: 700px;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width:993px) {
+  .count{
+    width: 100%;
+    height: 150px;
+  }
+}
+@media only screen and (max-width:772px) {
+  .count{
+    width: 100%;
+    height: 130px;
+  }
+}
+
+.sellBanner{
+  width: 100%;
+  height: 250px;
+  background-color: #353535;
+  color: white;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+#sellIMGBanner{
+  width: 60%;
+  margin-top: -50px;
+}
+#sellTitle{
+ font-size: bold;
+ font-size: 35px;
+ font-weight: bolder;
+ width: 100%;
+margin-top: 100px;
+}
+@media only screen and (max-width:1203px) {
+  #sellIMGBanner{
+    width: 70%;
+  }
+}
+@media only screen and (max-width:993px) {
+  #sellIMGBanner{
+    width: 80%;
+  }
+  .sellBanner{
+    height: 200px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+  }
+  #sellTitle{
+    font-size: bold;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+   margin-top: 82px;
+   }
+}
+
+@media only screen and (max-width:770px) {
+  #sellIMGBanner{
+    width: 50%;
+  }
+  .sellBanner{
+    height: 270px;
+    color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  #sellTitle{
+    font-size: bold;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+   margin-top: 8px;
+   }
+   .count{
+    font-size: larger;
+   }
+}
+.examplesMob{
+  display: none;
+}
+@media only screen and (max-width:577px) {
+  #sellIMGBanner{
+    width: 250px;
+  }
+  .sellBanner{
+    height: 270px;
+    color: white;
+    border-radius: 0%;
+    margin-top: 30px;
+    text-align: center;
+
+  }
+  .DTCounting{
+    display: none;
+  }
+  .MobCounting{
+    display: block;
+  }
+  #sellTitle{
+    font-size: bold;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+   margin-top: 8px;
+   }
+   .examplesDT{
+    display: none;
+   }
+   .examplesMob{
+    display: block;
+  }
+}
+
+
+.productBox{
+  width: 100%;
+  background-color: #353535;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#productBoxIMG{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#productBoxTitle{
+  color: white;
+  margin-top: 8px;
+  font-size: 20px;
+}
+#productBoxprice{
+  color: rgb(29, 116, 237);
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.viewmoreTemps{
+  color: rgb(29, 116, 237);
+  font-size: 25px;
+  text-align: left;
+}
+.viewmoreTitle{
+  text-align: right;
+  color: white;
+  font-size: 25px;
+}

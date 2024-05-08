@@ -1,0 +1,55 @@
+.breakLine {
+    width: 99%;
+    margin: auto;
+    height: 2px;
+    background-color: $Gold-color;
+    font-family: vazirmatn;
+    margin-top: 25px;
+
+    // position: absolute;
+    div {
+        background-color: white;
+        width: 130px;
+        font-size: 15px;
+        text-align: center;
+        margin: auto;
+        margin-top: -10px;
+    }
+}
+
+.b1banner {
+    background-image: url('assets/images/blog1.jpg');
+}
+
+.postDes {
+    text-align: right;
+
+    h1 {
+        color: $Gold-color;
+        font-size: 25px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        padding-right: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+        color: $Header-color;
+        padding-right: 20px;
+    }
+}
+
+.PostTitle {
+    color: $Gold-color;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.PostDes {
+    color: $Gold-color;
+    text-align: right;
+}
