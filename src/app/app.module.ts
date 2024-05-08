@@ -14,6 +14,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { TicketsComponent } from './account/tickets/tickets.component';
 @NgModule({
   declarations: [AppComponent, HomeComponent, CategoryComponent, ProductaListingComponent, ProductComponent],
   imports: [
@@ -22,7 +23,7 @@ import { BrowserModule } from '@angular/platform-browser';
     RouterModule.forRoot(
       [
         { path: '', component: HomeComponent },
-        { path: 'account', loadChildren:()=> import('./account/account.module').then(c=>c.AccountModule)},
+        { path: 'account', loadChildren: () => import('./account/account.module').then(c => c.AccountModule) },
 
         
         { path: 'category', component: CategoryComponent },
@@ -30,6 +31,7 @@ import { BrowserModule } from '@angular/platform-browser';
         { path: 'product/:id/:title', component: ProductComponent },
 
 
+        { path: 'tickets', component: TicketsComponent },
 
         { path: 'adressDropshipping', component: AdressComponent },
         { path: 'blog1', component: Blog1Component },

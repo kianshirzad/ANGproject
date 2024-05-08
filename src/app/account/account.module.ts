@@ -9,7 +9,8 @@ import { AddressessComponent } from './addressess/addressess.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { ProfileComponent } from './profile/profile.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 
@@ -34,7 +35,12 @@ import { RouterModule } from '@angular/router';
           { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
           { path: 'dashboard', component: DashboardComponent },
           { path: 'changepassword', component: ChangePasswordComponent },
+
+
           { path: 'orders', component: OrdersComponent },
+
+
+
           { path: 'favorites', component: FavoritsComponent },
           { path: 'addressess', component: AddressessComponent },
           { path: 'payments', component: PaymentsComponent },
