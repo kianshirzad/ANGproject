@@ -1,0 +1,67 @@
+<div class="row mx-auto w-100">
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+        <div class="dashboardNavbar">
+            <div id="dashboardNavbarcontent">
+                <h1>محمدرضا داورپناه</h1>
+                <h3>09121234567</h3>
+                <p>کاربر همکار یا فروشگاه</p>
+                <h2>اطلاعات کاربری را تکمیل نمایید</h2>
+            </div>
+            <div id="dashboardNavbarBody">
+
+                <div>
+                    <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+                    <p id="selectedlinkDashboard" routerLink="/account/dashboard">داشبورد</p><br>
+
+                    <i class="DashboardMoreicon" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+                </div>
+
+
+
+
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
+                <p routerLink="/account/profile">اطلاعات کاربر</p><br>
+
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
+
+                <p routerLink="/account/changepassword">تعیین رمز عبور</p><br>
+
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
+                <p routerLink="/account/orders">سفارش ها</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
+                <p routerLink="/account/favorites">لیست مورد علاقه ها</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
+                <p routerLink="/account/addressess">آدرس های شما</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+                <p routerLink="/account/tickets">تیکت ها و پیغام ها</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
+                <p routerLink="/account/payments">پرداخت ها و حسابداری</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
+                <p id="DExit">خروج</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 mx-auto">
+        <br>
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
