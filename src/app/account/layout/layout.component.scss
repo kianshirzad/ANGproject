@@ -5,7 +5,11 @@
     font-style: normal;
   }
   
-
+.iconsindashboardLayout{
+    svg{
+        width: 35px;
+    }
+}
   * {
     font-family: "Vazirmatn";
 }
@@ -197,7 +201,7 @@ $orange-color: #FF6C00;
         border-bottom-right-radius: 20px;
         text-align: right;
 
-        img {
+        i {
             float: right;
             width: 30px;
             padding-right: 40px;
@@ -308,13 +312,21 @@ $orange-color: #FF6C00;
     border-radius: 10px;
     width: 100%;
     z-index: 2;
-}
+    h3{
+        text-align: center;
+    }
 
+}
+    #adressparag{
+        text-align: right;
+        padding-right: 15px;
+    }
 .add {
     color: blue;
 }
 .ed {
     color: blue;
+    text-align: left;
 }
 
 .chatcontent {
@@ -425,6 +437,7 @@ $orange-color: #FF6C00;
     width: 50%;
     text-align: right;
     margin: auto;
+    padding-bottom: 20px;
 
     input{
         width: 100%;
@@ -451,8 +464,15 @@ $orange-color: #FF6C00;
         cursor: pointer;
     }
 }
+#changepassTitle{
+    text-align: right;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .DashboardOrdersSteps{
-    width: 100%;
+    width: 20%;
+    margin-right: 15px;
     height: 150px;
     border: $Gray-color;
     border-style: solid;
@@ -531,18 +551,30 @@ $orange-color: #FF6C00;
     margin-top: 10px;
 }
 .Dash1NavTitle{
-width: 100%;
+width: 49%;
 height: 100%;
 display: flex;
 align-items: center;
+padding-right: 35px;
+float: right;
 }
 .Dash1Navtotal{
-    width: 100%;
+    width: 49%;
     height: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
     color: $orange-color;
+padding-left: 35px;
+
+}
+.products{
+    width: 100%;
+    height: 250px;
+}
+.prodIMG{
+    width: 100%;
+    height: 90%;
 }
 #line{
     width: 100%;
@@ -564,22 +596,74 @@ align-items: center;
 #D1message{
     width: 100%;
     height: 50px;
-    background-color: rgb(224, 224, 224);
+    background-color:white;
     margin-top: 10px;
-    border-radius: 15px;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    text-align: center;
+    text-align: right;
+    padding-right: 20px;
+    #unreadnum{
+        width: 20px;
+        height: 20px;
+        background-color:  rgb(255, 174, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+    }
+    #unreadtext{
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #unreadLink{
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        a{
+            color: $orange-color;
+
+        }
+    }
+
 }
+.profileDetails{
+    width: 80%;
+    margin: auto;
+    button{
+        width: 100%;
+    }
+    .uploadProf{
+        width: 100%;
+    }
+}
+
 
 @media only screen and (max-width:990px) {
     #changePassDashboard{
         width: 80%;
     }
+    .DashboardOrdersSteps{
+        width: 30%;
+    }
 }
 @media only screen and (max-width:539px) {
     .listDTitle{
         font-size: small;
+    }
+}
+@media only screen and (max-width:485px) {
+    .DashboardOrdersSteps{
+        width: 33.3%;
+        margin-right: 0%;
     }
 }

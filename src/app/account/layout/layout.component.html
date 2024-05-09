@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row mx-auto w-100">
     <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
         <div class="dashboardNavbar">
             <div id="dashboardNavbarcontent">
@@ -8,45 +8,48 @@
                 <h2>اطلاعات کاربری را تکمیل نمایید</h2>
             </div>
             <div id="dashboardNavbarBody">
-                <img src="assets/images/icons/icons8-eye-90.png">
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
                 <p routerLink="/account/dashboard">داشبورد</p><br>
-                <i routerLink="" [innerHTML]="data.svgs['map']"></i>
-                <img src="assets/images/icons/icons8-eye-90.png">
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
 
                 <p routerLink="/account/profile">اطلاعات کاربر</p><br>
 
-                <img src="assets/images/icons/icons8-eye-90.png">
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+
 
                 <p routerLink="/account/changepassword">تعیین رمز عبور</p><br>
 
-                <img src="assets/images/icons/icons8-eye-90.png">
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
 
                 <p routerLink="/account/orders">سفارش ها</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
-                <img src="assets/images/icons/icons8-eye-90.png">
 
                 <p routerLink="/account/favorites">لیست مورد علاقه ها</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
-                <img src="assets/images/icons/icons8-eye-90.png">
 
                 <p routerLink="/account/addressess">آدرس های شما</p><br>
-
-                <img src="assets/images/icons/icons8-eye-90.png">
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
                 <p routerLink="/account/tickets">تیکت ها و پیغام ها</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
-                <img src="assets/images/icons/icons8-eye-90.png">
 
                 <p routerLink="/account/payments">پرداخت ها و حسابداری</p><br>
+                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
-                <img src="assets/images/icons/icons8-eye-90.png">
 
                 <p>خروج</p>
             </div>
         </div>
     </div>
 
-    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 mx-auto">
         <br>
         <router-outlet></router-outlet>
     </div>
