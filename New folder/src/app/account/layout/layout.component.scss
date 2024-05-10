@@ -342,12 +342,57 @@ $Dashboard-exit-color : #ceac8b;
     }
 .add {
     color: blue;
+    p{
+    margin-left: 38px;
+
+    }
 }
 .ed {
     color: blue;
-    text-align: left;
+    img{
+        width: 10px;
+    text-align: right;
+    }
 }
-
+.edittext{
+    p{
+        margin-left: -60px;
+        text-align: left;
+    }
+}
+@media only screen and (max-width:1290px) {
+    .edittext{
+        p{
+            margin-left: -50px;
+    
+        }
+    }
+}
+@media only screen and (max-width:1148px) {
+    .edittext{
+        p{
+            margin-left: -40px;
+      
+        }
+    }
+}
+@media only screen and (max-width:730px) {
+    .ed {
+        img{
+            display: none;
+        }
+    }
+    .edittext{
+        p{
+            margin-left: 0px;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    #adressparag{
+font-size: 13px;
+    }
+}
 .chatcontent {
     width: 100%;
     border: $Gray-color;
@@ -516,7 +561,7 @@ $Dashboard-exit-color : #ceac8b;
 .DashboardOrdersSteps{
     width: 20%;
     margin-right: 15px;
-    height: 150px;
+    height: 100px;
     border: $Gray-color;
     border-style: solid;
     border-radius: 10px;
@@ -526,15 +571,16 @@ $Dashboard-exit-color : #ceac8b;
     justify-content: center;
     text-align: center;
     z-index: -1;
+    padding-top: -10px;
 }
 #selectedStep{
-    border-color: $orange-color;
+    border-color: $Gray-color;
     color: $orange-color;
 }
 #ordersDashboardIndex{
     margin-top: -15px;
     background-color: white;
-    height: 500px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -575,7 +621,7 @@ $Dashboard-exit-color : #ceac8b;
 }
 .listDTitle{
     text-align: right;
-    color: $Header-color;
+    color: #616161;
     margin-top: 15px;
 }
 #listTitle{
@@ -688,8 +734,20 @@ padding-left: 35px;
     .uploadProf{
         width: 100%;
     }
+    span{
+        font-size: 40px;
+        color: $orange-color;
+        font-weight: bold;
+    }
+    p{
+        padding-bottom: 20px;
+    }
 }
-
+#profileTitle{
+    text-align: right;
+    color: $Header-color;
+    font-size: 25px;
+}
 
 @media only screen and (max-width:990px) {
     #changePassDashboard{
