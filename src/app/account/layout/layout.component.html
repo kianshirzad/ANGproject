@@ -8,9 +8,19 @@
                 <h2>اطلاعات کاربری را تکمیل نمایید</h2>
             </div>
             <div id="dashboardNavbarBody">
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
-                <p routerLink="/account/dashboard">داشبورد</p><br>
+                <div>
+                    <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+                    <p id="selectedlinkDashboard" routerLink="/account/dashboard">داشبورد</p><br>
+
+                    <i class="DashboardMoreicon" routerLink="" [innerHTML]="data.svgs['map']"></i>
+
+                </div>
+
+
+
+
                 <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
 
@@ -44,7 +54,7 @@
                 <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
 
 
-                <p>خروج</p>
+                <p id="DExit">خروج</p>
             </div>
         </div>
     </div>

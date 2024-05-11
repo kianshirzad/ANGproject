@@ -19,6 +19,7 @@ $Header-color : #434343;
 $Gray-color: #EDEDED;
 $Gold-color: #C3A270;
 $orange-color: #FF6C00;
+$Dashboard-exit-color : #ceac8b;
 
 .opensans {
     font-family: "Open Sans", sans-serif;
@@ -189,6 +190,7 @@ $orange-color: #FF6C00;
             color: yellow;
             font-size: 15px;
         }
+        
     }
 
     #dashboardNavbarBody {
@@ -207,17 +209,34 @@ $orange-color: #FF6C00;
             padding-right: 40px;
             margin-top: -6px;
         }
+        .DashboardMoreicon{
+            float: left;
+            width: 30px;
+            padding-right: 10px;
+            margin-top: -57px;
+            margin-left: 10px;
+        }
 
         p {
             font-size: 15px;
             margin-top: -1px;
             font-weight: bold;
-            color: $Header-color;
+            color: #616161;
             margin-right: 100px;
+        }
+        #selectedlinkDashboard{
+                color: black;
+                font-weight: bold;
+                font-size: large;
+        }
+        #DExit{
+            color: $Dashboard-exit-color;
         }
     }
 }
-
+.yournameinTicket{
+    color: $orange-color;
+}
 .dascboardContent {
     width: 100%;
     margin-top: -12px;
@@ -312,7 +331,7 @@ $orange-color: #FF6C00;
     border-radius: 10px;
     width: 100%;
     z-index: 2;
-    h3{
+    h4{
         text-align: center;
     }
 
@@ -323,12 +342,57 @@ $orange-color: #FF6C00;
     }
 .add {
     color: blue;
+    p{
+    margin-left: 38px;
+
+    }
 }
 .ed {
     color: blue;
-    text-align: left;
+    img{
+        width: 10px;
+    text-align: right;
+    }
 }
-
+.edittext{
+    p{
+        margin-left: -60px;
+        text-align: left;
+    }
+}
+@media only screen and (max-width:1290px) {
+    .edittext{
+        p{
+            margin-left: -50px;
+    
+        }
+    }
+}
+@media only screen and (max-width:1148px) {
+    .edittext{
+        p{
+            margin-left: -40px;
+      
+        }
+    }
+}
+@media only screen and (max-width:730px) {
+    .ed {
+        img{
+            display: none;
+        }
+    }
+    .edittext{
+        p{
+            margin-left: 0px;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    #adressparag{
+font-size: 13px;
+    }
+}
 .chatcontent {
     width: 100%;
     border: $Gray-color;
@@ -340,6 +404,12 @@ $orange-color: #FF6C00;
     h3 {
         color: $orange-color;
         font-size: 14px;
+    }
+    h6{
+        text-align: left;
+        color: $Header-color;
+        font-size: medium;
+        margin-left: 10px;
     }
 
     padding-left: 10px;
@@ -361,27 +431,14 @@ $orange-color: #FF6C00;
     }
 
     #send {
-        margin: auto;
-
-        div {
-            width: 100%;
-            height: 50px;
-            background-color: #95343480;
-            border: $orange-color;
-            border-style: dashed;
-            margin-right: 20px;
-            border-radius: 10px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-        }
-
+        width: 100%;
+      
+    
+    
         button {
             width: 50%;
             margin-top: 20px;
+            margin: auto;
             border-style: none;
             color: white;
             background-color: $orange-color;
@@ -394,14 +451,45 @@ $orange-color: #FF6C00;
     }
 
 }
+#sendup{
+    border: $orange-color;
+    border-style: dashed;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    .insidediv {
+        width: 98%;
+        height: 90%;
+        border-radius: 10px;
+        background-color: #e254545d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }    
 
+
+}
+.buttonfather{
+    text-align: center;
+    width: 100%;
+}
+.sentBTNTickets{
+    height: 50px;
+}
 .pm1 {
     width: 50%;
     background-color: $Gray-color;
-    height: 85px;
+    height: 111px;
     text-align: right;
     float: right;
     border-radius: 10px;
+    border: $Header-color 1px;
+    border-style: solid;
 
     p {
         margin-right: 10px;
@@ -415,9 +503,9 @@ $orange-color: #FF6C00;
 
 .pm2 {
     width: 50%;
-    height: 85px;
+    height: 111px;
     background-color: white;
-    border: $orange-color;
+    border: $orange-color 1px;
     border-style: solid;
     border-radius: 10px;
     float: left;
@@ -473,7 +561,7 @@ $orange-color: #FF6C00;
 .DashboardOrdersSteps{
     width: 20%;
     margin-right: 15px;
-    height: 150px;
+    height: 100px;
     border: $Gray-color;
     border-style: solid;
     border-radius: 10px;
@@ -483,15 +571,16 @@ $orange-color: #FF6C00;
     justify-content: center;
     text-align: center;
     z-index: -1;
+    padding-top: -10px;
 }
 #selectedStep{
-    border-color: $orange-color;
+    border-color: $Gray-color;
     color: $orange-color;
 }
 #ordersDashboardIndex{
     margin-top: -15px;
     background-color: white;
-    height: 500px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -532,7 +621,7 @@ $orange-color: #FF6C00;
 }
 .listDTitle{
     text-align: right;
-    color: $Header-color;
+    color: #616161;
     margin-top: 15px;
 }
 #listTitle{
@@ -645,8 +734,20 @@ padding-left: 35px;
     .uploadProf{
         width: 100%;
     }
+    span{
+        font-size: 40px;
+        color: $orange-color;
+        font-weight: bold;
+    }
+    p{
+        padding-bottom: 20px;
+    }
 }
-
+#profileTitle{
+    text-align: right;
+    color: $Header-color;
+    font-size: 25px;
+}
 
 @media only screen and (max-width:990px) {
     #changePassDashboard{
@@ -666,4 +767,8 @@ padding-left: 35px;
         width: 33.3%;
         margin-right: 0%;
     }
+}
+
+#sendup{
+    margin-left: 30px;
 }
