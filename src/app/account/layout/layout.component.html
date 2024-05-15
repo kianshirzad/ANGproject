@@ -9,56 +9,22 @@
             </div>
             <div id="dashboardNavbarBody">
 
-                <div>
-                    <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-                    <p id="selectedlinkDashboard" routerLink="/account/dashboard">داشبورد</p><br>
-
-                    <i class="DashboardMoreicon" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
+                <div *ngFor="let item of routes">
+                    <i class="iconsindashboardLayout" (click)="select(item)" [routerLink]="item.route"
+                        [innerHTML]="data.svgs[item.icon]"></i>
+                    <p (click)="select(item)" [class.selectedlinkDashboard]="item.selected" [routerLink]="item.route">
+                        {{item.title}}</p><br>
+                    <i *ngIf="item.selected" class="DashboardMoreicon" routerLink=""
+                        [innerHTML]="data.svgs['left']"></i>
                 </div>
 
-
-
-
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-
-                <p routerLink="/account/profile">اطلاعات کاربر</p><br>
-
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-
-
-                <p routerLink="/account/changepassword">تعیین رمز عبور</p><br>
-
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-
-                <p routerLink="/account/orders">سفارش ها</p><br>
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-
-                <p routerLink="/account/favorites">لیست مورد علاقه ها</p><br>
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-
-                <p routerLink="/account/addressess">آدرس های شما</p><br>
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-                <p routerLink="/account/tickets">تیکت ها و پیغام ها</p><br>
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-
-                <p routerLink="/account/payments">پرداخت ها و حسابداری</p><br>
-                <i class="iconsindashboardLayout" routerLink="" [innerHTML]="data.svgs['map']"></i>
-
-
-                <p id="DExit">خروج</p>
+                <div>
+                    <i class="iconsindashboardLayout" [innerHTML]="data.svgs['exit']"></i>
+                    <p class="selectedlinkDashboard">خروج</p><br>
+                </div>
             </div>
         </div>
     </div>
-
     <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 mx-auto">
         <br>
         <router-outlet></router-outlet>

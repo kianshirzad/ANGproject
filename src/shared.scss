@@ -2,3 +2,9 @@ $Header-color : #434343;
 $Gray-color: #EDEDED;
 $Gold-color: #C3A270;
 $orange-color: #FF6C00;
+
+
+@mixin contactDivs {
+    width: 100%;
+    margin: auto;
+}
