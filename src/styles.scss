@@ -1,9 +1,7 @@
+@import "shared";
 @import "../node_modules/bootstrap/dist/css/bootstrap-grid.rtl.css";
 
-$Header-color : #434343;
-$Gray-color: #EDEDED;
-$Gold-color: #C3A270;
-$orange-color: #FF6C00;
+
 
 .opensans {
     font-family: "Open Sans", sans-serif;
@@ -356,74 +354,7 @@ footer {
     background-image: url('assets/images/contact\ slicto\ banner.jpg');
 }
 
-.ContactTemp {
-    text-align: center;
-    border: $Gray-color;
-    border-style: solid;
-    border-radius: 10px;
-    padding-top: 10px;
-    @include contactDivs();
 
-    div {
-        width: 90%;
-        margin: auto;
-    }
-
-    h1 {
-        color: $Gold-color;
-    }
-
-    @mixin inputs {
-        input {
-            width: 100%;
-            height: 40px;
-            border: $Gray-color;
-            border-style: solid;
-            border-radius: 10px;
-        }
-
-        p {
-            margin-top: 20px;
-        }
-    }
-
-    .rightInputs {
-        width: 45%;
-        float: right;
-        text-align: right;
-        @include inputs();
-    }
-
-    .leftInputs {
-        width: 49%;
-        float: left;
-        text-align: right;
-        @include inputs();
-    }
-
-    textarea {
-        width: 100%;
-        border: $Gray-color;
-        border-style: solid;
-        border-radius: 10px;
-        margin-top: 10px;
-        resize: none;
-    }
-
-    button {
-        width: 90%;
-        background-color: $orange-color;
-        font-size: 20px;
-        color: white;
-        height: 60px;
-        border-style: none;
-        border-radius: 10px;
-        margin-top: 30px;
-    }
-
-    padding-bottom: 30px;
-
-}
 
 .contactP {
     text-align: center;
@@ -482,328 +413,10 @@ footer {
     float: right;
 }
 
-.upload {
-    width: 40%;
-    margin: auto;
-    border: $orange-color;
-    border-style: dashed;
-    border-radius: 10px;
-    height: 100px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-
-    div {
-        width: 95%;
-        height: 90%;
-        border-radius: 10px;
-        background-color: #e254545d;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: white;
-
-        p {
-            margin-top: 10px;
-        }
-    }
-
-}
-
-.steps {
-    width: 80%;
-    height: 5px;
-    background-color: $Gray-color;
-    margin: auto;
-    padding-left: 50px;
-
-    @mixin steps {
-        width: 50%;
-        height: 100%;
-        float: right;
-    }
-
-    @mixin circules {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-    }
-
-    #right {
-        @include steps();
-        background-color: $orange-color;
-
-        div {
-            @include circules();
-            background-color: $orange-color;
-            float: right;
-            margin-top: -7px;
-            margin-right: 50px
-        }
-    }
-
-    #left {
-        @include steps();
-
-        div {
-            @include circules();
-            background-color: $Gray-color;
-            float: left;
-            margin-top: -7px
-        }
-
-        #center {
-            background-color: $orange-color;
-            float: right;
-        }
-    }
-}
-
-.AdressPageTemp {
-    color: $Header-color;
-    width: 80%;
-    text-align: right;
-    margin: auto;
-    margin-top: 50px;
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .break {
-        width: 100%;
-        margin: auto;
-        background-color: #525252;
-        height: 1px;
-    }
-
-    input {
-        accent-color: $orange-color;
-    }
-
-    a {
-        margin-right: 20px;
-        text-decoration: none;
-    }
-
-    #newAddress {
-        float: left;
-    }
-
-    div {
-        width: 100%;
-        text-align: center;
-    }
-
-    button {
-        width: 50%;
-        height: 50px;
-        background-color: white;
-        border: $orange-color;
-        border-style: solid;
-        margin: auto;
-        border-radius: 10px;
-        font-size: 15px;
-        font-weight: bold;
-        color: blue;
-        font-family: vazirmatn;
-        cursor: pointer;
-    }
-
-    .postDetail {
-        font-size: 12px;
-
-    }
-
-    h3 {
-        float: left;
-        color: $Gold-color;
-    }
-
-    #total {
-        margin-top: -40px;
-    }
-
-    #accept {
-        background-color: $orange-color;
-        width: 40%;
-        height: 50px;
-        color: white;
-        border-radius: 10px;
-        border-style: none;
-        font-family: vazirmatn;
-        font-size: 15px;
-    }
-}
-
-// dashboard
-#temp {
-    width: 90%;
-    margin: auto;
-}
-
-.dashboardNavbar {
-    width: 100%;
-    text-align: center;
-    float: right;
-
-    #dashboardNavbarcontent {
-        width: 100%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        background-color: #1d1d1d;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
-        h1 {
-            color: $orange-color;
-            font-size: 20px;
-        }
-
-        h3 {
-            color: $Gray-color;
-            font-size: 14px;
-        }
-
-        p {
-            color: white;
-            font-size: 18px;
-        }
-
-        h2 {
-            color: yellow;
-            font-size: 15px;
-        }
-    }
-
-    #dashboardNavbarBody {
-        width: 100%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: $Gray-color;
-        border-style: solid;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        text-align: right;
-
-        img {
-            float: right;
-            width: 30px;
-            padding-right: 40px;
-            margin-top: -6px;
-        }
-
-        p {
-            font-size: 15px;
-            margin-top: -1px;
-            font-weight: bold;
-            color: $Header-color;
-            margin-right: 100px;
-        }
-    }
-}
-
-.dascboardContent {
-    width: 100%;
-    margin-top: -12px;
-    text-align: right;
-    float: left;
-    border: $Gray-color;
-    border-style: solid;
-    background-color: white;
-    border-radius: 15px;
-
-    div {
-        width: 100%;
-        border-top-style: outset;
-        border-bottom-color: $Gray-color;
-        padding-top: 15px;
-
-        h5 {
-            float: right;
-            color: $Header-color;
-            margin-right: 40px;
-            margin-top: 35px;
-        }
-
-        h6 {
-            float: right;
-            color: $orange-color;
-            margin-right: 10px;
-            font-size: 15px;
-
-        }
-
-        h4 {
-            float: right;
-            color: $Header-color;
-            margin-right: 30px;
-            margin-top: 35px;
-        }
-
-        img {
-            float: left;
-            width: 25px;
-            margin-top: 30px;
-            margin-left: 15px;
-        }
-
-        p {
-            float: right;
-            margin-right: 30px;
-            margin-top: -9px;
-
-        }
-
-        h3 {
-            float: left;
-            margin-top: -22px;
-            color: $Gold-color;
-            margin-left: 20px;
-        }
-
-        h1 {
-            float: right;
-            font-size: 20px;
-            margin-top: -10px;
-        }
-    }
-
-}
-
-.dashboardsteps {
-    width: 180px;
-    height: 80px;
-    margin-top: 100px;
-    float: right;
-    border: $Gray-color;
-    border-style: solid;
-    border-radius: 15px;
-    margin-right: 30px;
-    text-align: center;
-
-    h3 {
-        font-size: 15px;
-    }
-
-    p {
-        margin-top: -10px;
-    }
-}
-
 #selectedOrderImage {
     float: right;
     width: 180px;
     height: 100%;
-
-}
-
-#selectedStep {
-    color: $orange-color;
-    border: $orange-color;
-    border-style: solid;
 
 }
 
@@ -877,110 +490,6 @@ footer {
         float: left;
         margin-left: 20px;
         text-decoration: none;
-    }
-}
-
-.chatcontent {
-    width: 100%;
-    border: $Gray-color;
-    border-style: solid;
-    border-radius: 15px;
-    float: left;
-    text-align: right;
-
-    h3 {
-        color: $orange-color;
-        font-size: 14px;
-    }
-
-    padding-left: 10px;
-    padding-right: 10px;
-
-    #send {
-        width: 100%;
-        text-align: center;
-    }
-
-    textarea {
-        width: 80%;
-        resize: none;
-        border: $Gray-color;
-        border-style: solid;
-        margin: auto;
-        margin-top: 30px;
-        border-radius: 10px;
-    }
-
-    #send {
-        margin: auto;
-
-        div {
-            width: 100%;
-            height: 50px;
-            background-color: #95343480;
-            border: $orange-color;
-            border-style: dashed;
-            margin-right: 20px;
-            border-radius: 10px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-        }
-
-        button {
-            width: 50%;
-            margin-top: 20px;
-            border-style: none;
-            color: white;
-            background-color: $orange-color;
-            border-radius: 10px;
-            font-size: 15px;
-            height: 50px;
-            font-family: vazirmatn;
-            cursor: pointer;
-        }
-    }
-
-}
-
-.pm1 {
-    width: 50%;
-    background-color: $Gray-color;
-    height: 85px;
-    text-align: right;
-    float: right;
-    border-radius: 10px;
-
-    p {
-        margin-right: 10px;
-    }
-
-    h1 {
-        font-size: 15px;
-        margin-right: 10px;
-    }
-}
-
-.pm2 {
-    width: 50%;
-    height: 85px;
-    background-color: white;
-    border: $orange-color;
-    border-style: solid;
-    border-radius: 10px;
-    float: left;
-    margin-top: 10px;
-
-    p {
-        margin-right: 10px
-    }
-
-    h1 {
-        font-size: 15px;
-        margin-right: 10px;
     }
 }
 
@@ -1333,19 +842,7 @@ footer {
     }
 }
 
-.sendBTN {
-    color: white;
-    background-color: $orange-color;
-    height: 40px;
-}
 
-.ed {
-    color: blue;
-}
-
-.add {
-    color: blue;
-}
 
 
 .cardimg {
@@ -1427,14 +924,6 @@ footer {
     }
 }
 
-
-.dashboardIndex {
-    border: $Gray-color;
-    border-style: solid;
-    border-radius: 10px;
-    width: 100%;
-}
-
 #downSymbol {
     width: 40px;
 }
@@ -1485,4 +974,14 @@ footer {
             display: none;
         }
     }
+}
+
+
+.products{
+    width: 100%;
+    height: 250px;
+}
+.prodIMG{
+    width: 100%;
+    height: 90%;
 }

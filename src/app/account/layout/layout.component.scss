@@ -1,17 +1,9 @@
-.vazirmatn-VazirFont {
-    font-family: "Vazirmatn", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 450;
-    font-style: normal;
-  }
+@import "../../../shared";
   
 .iconsindashboardLayout{
     svg{
         width: 35px;
     }
-}
-  * {
-    font-family: "Vazirmatn";
 }
 
 
@@ -657,14 +649,7 @@ float: right;
 padding-left: 35px;
 
 }
-.products{
-    width: 100%;
-    height: 250px;
-}
-.prodIMG{
-    width: 100%;
-    height: 90%;
-}
+
 #line{
     width: 100%;
     height: 2px;
@@ -772,3 +757,109 @@ padding-left: 35px;
 #sendup{
     margin-left: 30px;
 }
+
+.ContactTemp {
+    text-align: center;
+    border: $Gray-color;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    @include contactDivs();
+
+    div {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        color: $Gold-color;
+    }
+
+    @mixin inputs {
+        input {
+            width: 100%;
+            height: 40px;
+            border: $Gray-color;
+            border-style: solid;
+            border-radius: 10px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    }
+
+    .rightInputs {
+        width: 45%;
+        float: right;
+        text-align: right;
+        @include inputs();
+    }
+
+    .leftInputs {
+        width: 49%;
+        float: left;
+        text-align: right;
+        @include inputs();
+    }
+
+    textarea {
+        width: 100%;
+        border: $Gray-color;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: 10px;
+        resize: none;
+    }
+
+    button {
+        width: 90%;
+        background-color: $orange-color;
+        font-size: 20px;
+        color: white;
+        height: 60px;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    padding-bottom: 30px;
+
+}
+
+.upload {
+    width: 40%;
+    margin: auto;
+    border: $orange-color;
+    border-style: dashed;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    div {
+        width: 95%;
+        height: 90%;
+        border-radius: 10px;
+        background-color: #e254545d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+
+        p {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+.sendBTN {
+    color: white;
+    background-color: $orange-color;
+    height: 40px;
+}
+
