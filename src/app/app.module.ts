@@ -29,8 +29,6 @@ import { TicketsComponent } from './account/tickets/tickets.component';
         { path: 'category', component: CategoryComponent },
         { path: 'listing', component: ProductaListingComponent },
         { path: 'product/:id/:title', component: ProductComponent },
-
-
         { path: 'tickets', component: TicketsComponent },
 
         { path: 'adressDropshipping', component: AdressComponent },
