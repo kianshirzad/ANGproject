@@ -42,6 +42,7 @@ import { TicketsComponent } from './account/tickets/tickets.component';
       ]
     )
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers:[]
 })
 export class AppModule { }
